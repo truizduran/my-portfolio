@@ -1,58 +1,25 @@
 <!DOCTYPE html>
-<html>
-<title>Tomás Ruiz Durán</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.bgimg {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(./media/img/IMG_2329.jpg);
-  min-height: 100%;
-}
-
-footer a{
-    text-decoration: none;
-}
-
-.w3-section a{
-    text-decoration: none;
-}
-
-.w3-wide{
-  text-transform: uppercase;
-}
-
-@media only screen and (min-width: 1023px){
-header{
-  height: 100vh;
-  
-}
-header .nombre{
-  display: flex;
-  flex-flow: wrap column;
-  justify-content: center;
-  height: 70vh;
-}
+<html lang="en es">
+<head>
+  <title>Tomás Ruiz Durán</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./styles/index.css">
+</head>
 
 
-}
-</style>
 <body>
 
-<!-- Sidebar with image -->
-<nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
+  <!-- Sidebar with image -->
+  <nav class="w3-sidebar w3-hide-medium w3-hide-small" style="width:40%">
     <div class="bgimg"></div>
-</nav>
+  </nav>
 
-<!-- Hidden Sidebar (reveals when clicked on menu icon)-->
-<nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <!-- Hidden Sidebar (reveals when clicked on menu icon)-->
+  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
     <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black         w3-xxxlarge w3-display-topright" style="padding:0 12px;">
         <i class="fa fa-remove"></i>
     </a>
@@ -62,7 +29,7 @@ header .nombre{
         <a href="#about" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">About</a>
         <a href="#contact" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Contact</a>
     </div>
-</nav>
+  </nav>
 
 <!-- Page Content -->
 <div class="w3-main w3-padding-large" style="margin-left:40%">
@@ -89,7 +56,7 @@ header .nombre{
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-half">
-            <img src="./media/img/portfolio1.PNG" class="w3-greyscale" style="width:100%">
+            <img src="./media/img/portfolio1.PNG" class="w3-greyscale" style="width:100%;cursor:zoom-in" onclick="document.getElementById('modal01').style.display='block'">
             <img src="" style="width:100%">
             <img src="" style="width:100%">
         </div>
@@ -102,17 +69,30 @@ header .nombre{
         </div>
     <!-- End photo grid -->
     </div>
-    <!-- End Portfolio Section -->
+  
   </div>
+
+  <!-- modal section -->
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./media/img/portfolio1.PNG" style="width:100%">
+    </div>
+  </div>
+  <!-- end modal section -->
+
+  <!-- End Portfolio Section -->
 
   <!-- About Section -->
 
     <h2 id="about" class="w3-text-grey">About</h2>
     <hr class="w3-opacity">
-    <p>Some text about me. Some text about me. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
-      elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>I've lived in Argentina for 27 years, until one day I decided to leave the routine to go explore the world. At the moment I call Berlin my home.
     </p>
+    <br>
+    <p>Although I've always loved programming, my career began when I started thinking about what I really wanted for myself. In my free time I decided to focus on this beautiful world with small projects and different courses. Now I know that I am ready for this world to stop being only in my free time.</p>
+    <br>
+    <p>My goal is to create web pages that stand the test of time. Using the skills I have learned to make your sites user friendly, innovative and meet your expectations.</p>
     <h3 class="w3-padding-16">My Skills</h3>
     <p class="w3-wide">html</p>
     <div class="w3-light-grey">
@@ -169,7 +149,7 @@ header .nombre{
     <img src="/w3images/avatar_g2.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
     <p><span class="w3-large w3-text-black w3-margin-right">Rebecca Flex.</span> CEO at Company.</p>
     <p>No one is better than Jane Doe.</p><br>
-     -->
+    -->
 
     
     <!-- End About Section -->

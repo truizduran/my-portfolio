@@ -1,0 +1,41 @@
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+
+nav .bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(../media/img/IMG_2329.jpg);
+  min-height: 100%;
+}
+
+footer a{
+    text-decoration: none;
+}
+
+.w3-section a{
+    text-decoration: none;
+}
+
+.w3-wide{
+  text-transform: uppercase;
+}
+
+.w3-modal-content img{
+  margin: 0px 0px 0px;
+}
+
+@media only screen and (min-width: 1023px){
+header{
+  height: 100vh;
+  
+}
+header .nombre{
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: center;
+  height: 70vh;
+}
+
+
+}
