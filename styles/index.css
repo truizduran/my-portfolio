@@ -25,6 +25,22 @@ footer a{
   margin: 0px 0px 0px;
 }
 
+.yoSoy{
+  display: inline-block;
+
+  animation: fadeInDown;
+  animation-duration: 2s;
+}
+
+.dev1{
+  display: inline-block;
+
+  animation: fantasma ease 0s 1 normal none;
+  animation-duration: 10s;
+  
+  
+}
+
 @media only screen and (min-width: 1023px){
 header{
   height: 100vh;
@@ -37,6 +53,21 @@ header .nombre{
   height: 70vh;
 }
 
+}
 
+@keyframes fantasma {
+  0.0%{
+      opacity: 0;
+  }
+  
+  17%{
+    opacity: 0;
+  }
+  
+  60%{
+    opacity: 20;
+  }
 
 }
+
+
