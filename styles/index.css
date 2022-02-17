@@ -55,6 +55,14 @@ header .nombre{
 
 }
 
+@media only screen and (max-width: 450px){
+
+  header .fotoMia{
+    padding-top: 150px;
+  }
+
+}
+
 @keyframes fantasma {
   0.0%{
       opacity: 0;
