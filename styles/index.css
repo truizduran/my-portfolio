@@ -27,18 +27,24 @@ footer a{
 
 .yoSoy{
   display: inline-block;
-
   animation: fadeInDown;
   animation-duration: 2s;
 }
 
 .dev1{
   display: inline-block;
-
   animation: fantasma ease 0s 1 normal none;
   animation-duration: 10s;
-  
-  
+
+}
+
+.link1{
+  text-decoration: none;
+  font-size: 0.7rem;
+}
+
+.fotoPpg{
+  margin: 0px !important;
 }
 
 @media only screen and (min-width: 1023px){
@@ -55,7 +61,7 @@ header .nombre{
 
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 500px){
 
   header .fotoMia{
     padding-top: 165px;
