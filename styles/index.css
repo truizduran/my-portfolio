@@ -38,13 +38,28 @@ footer a{
 
 }
 
-.link1{
+.link1,
+.link2{
   text-decoration: none;
   font-size: 0.7rem;
 }
 
 .fotoPpg{
   margin: 0px !important;
+}
+
+.courses{
+  margin-bottom: 30px !important;
+}
+
+.courses img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.fotoFreeCode{
+  height: 250px;
+  width: 330px;
 }
 
 @media only screen and (min-width: 1023px){
