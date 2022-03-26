@@ -57,10 +57,15 @@ footer a{
   max-height: 100%;
 }
 
-.fotoFreeCode{
+
+.fotoFreeCode,
+.fotoCoderDw{
   height: 250px;
   width: 330px;
 }
+
+
+
 
 @media only screen and (min-width: 1023px){
 header{
@@ -76,13 +81,8 @@ header .nombre{
 
 }
 
-@media only screen and (max-width: 500px){
 
-  header .fotoMia{
-    padding-top: 165px;
-  }
 
-}
 
 @keyframes fantasma {
   0.0%{
@@ -99,4 +99,30 @@ header .nombre{
 
 }
 
+
+
+@media only screen and (max-width: 500px){
+
+  header .fotoMia{
+    padding-top: 165px;
+  }
+
+  .fotoCoderDw{
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 321px){
+
+  #contact .datos p {
+    font-size: 14px;
+    
+  }
+
+}
 

@@ -10,7 +10,6 @@ function openNav(){
         document.getElementById("mySidebar").style.display = "block";
         
     }else{
-        
         document.getElementById("mySidebar").style.width = "100%";
         document.getElementById("mySidebar").style.display = "block";
         
